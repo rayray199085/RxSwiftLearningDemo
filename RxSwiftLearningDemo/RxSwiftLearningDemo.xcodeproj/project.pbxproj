@@ -17,6 +17,9 @@
 		0DA0921823360EA400C15195 /* ControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA0921723360EA400C15195 /* ControllerInfo.swift */; };
 		0DA0921C23360F8E00C15195 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA0921A23360F8E00C15195 /* ExtensionViewController.swift */; };
 		0DA0921D23360F8E00C15195 /* ExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DA0921B23360F8E00C15195 /* ExtensionViewController.xib */; };
+		0DB709582336F9D700982ABB /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB709572336F9D700982ABB /* SubjectViewController.swift */; };
+		0DB7095C23371D2500982ABB /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB7095A23371D2500982ABB /* TestViewController.swift */; };
+		0DB7095D23371D2500982ABB /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB7095B23371D2500982ABB /* TestViewController.xib */; };
 		A0749F30F3959AA7ABFF65A6 /* Pods_RxSwiftLearningDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BD3BF067D812FDF4A2566E /* Pods_RxSwiftLearningDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +37,9 @@
 		0DA0921723360EA400C15195 /* ControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerInfo.swift; sourceTree = "<group>"; };
 		0DA0921A23360F8E00C15195 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		0DA0921B23360F8E00C15195 /* ExtensionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtensionViewController.xib; sourceTree = "<group>"; };
+		0DB709572336F9D700982ABB /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
+		0DB7095A23371D2500982ABB /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		0DB7095B23371D2500982ABB /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		54BD3BF067D812FDF4A2566E /* Pods_RxSwiftLearningDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftLearningDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E504C33247876BC4C1E967 /* Pods-RxSwiftLearningDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftLearningDemo.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftLearningDemo/Pods-RxSwiftLearningDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +108,8 @@
 		0DA092102336094700C15195 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0DB7095923371D1100982ABB /* Test */,
+				0DB709562336F9C100982ABB /* Subject */,
 				0DA0921923360F7600C15195 /* Extension */,
 				0DA0921223360A4100C15195 /* Base */,
 			);
@@ -148,6 +156,23 @@
 				0DA0921B23360F8E00C15195 /* ExtensionViewController.xib */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		0DB709562336F9C100982ABB /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				0DB709572336F9D700982ABB /* SubjectViewController.swift */,
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
+		0DB7095923371D1100982ABB /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				0DB7095A23371D2500982ABB /* TestViewController.swift */,
+				0DB7095B23371D2500982ABB /* TestViewController.xib */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		7027124BCA1BAEC36461AD31 /* Pods */ = {
@@ -228,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DA0921D23360F8E00C15195 /* ExtensionViewController.xib in Resources */,
+				0DB7095D23371D2500982ABB /* TestViewController.xib in Resources */,
 				0DA092072336092800C15195 /* LaunchScreen.storyboard in Resources */,
 				0DA092042336092800C15195 /* Assets.xcassets in Resources */,
 				0DA092022336092600C15195 /* Main.storyboard in Resources */,
@@ -294,8 +320,10 @@
 			files = (
 				0DA091FF2336092600C15195 /* ViewController.swift in Sources */,
 				0DA0921823360EA400C15195 /* ControllerInfo.swift in Sources */,
+				0DB7095C23371D2500982ABB /* TestViewController.swift in Sources */,
 				0DA0921C23360F8E00C15195 /* ExtensionViewController.swift in Sources */,
 				0DA091FB2336092600C15195 /* AppDelegate.swift in Sources */,
+				0DB709582336F9D700982ABB /* SubjectViewController.swift in Sources */,
 				0DA0921523360A8E00C15195 /* ListViewModel.swift in Sources */,
 				0DA091FD2336092600C15195 /* SceneDelegate.swift in Sources */,
 			);

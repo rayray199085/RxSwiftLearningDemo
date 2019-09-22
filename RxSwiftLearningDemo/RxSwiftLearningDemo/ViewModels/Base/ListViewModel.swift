@@ -12,5 +12,7 @@ import RxSwift
 
 struct ListViewModel {
     let data = Observable.just([
-        ControllerInfo(className: "ExtensionViewController", displayTitle: "Extension")])
+        ControllerInfo(className: "ExtensionViewController", displayTitle: "Extension"),
+        ControllerInfo(className: "SubjectViewController", displayTitle: "Subject"),
+        ControllerInfo(className: "TestViewController", displayTitle: "Test")])
 }

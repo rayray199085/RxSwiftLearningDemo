@@ -30,6 +30,7 @@ class ViewController: UIViewController {
                 return
             }
             let vc = cls.init()
+            vc.title = controllerInfo.displayTitle
             self?.navigationController?.pushViewController(vc, animated: true)
             }).disposed(by: disposeBag)
     }
