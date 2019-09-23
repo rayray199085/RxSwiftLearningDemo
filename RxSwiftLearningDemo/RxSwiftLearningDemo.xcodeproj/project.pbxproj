@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D480ABF2338A5440058874C /* ObservableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D480ABE2338A5440058874C /* ObservableViewController.swift */; };
 		0DA091FB2336092600C15195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA091FA2336092600C15195 /* AppDelegate.swift */; };
 		0DA091FD2336092600C15195 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA091FC2336092600C15195 /* SceneDelegate.swift */; };
 		0DA091FF2336092600C15195 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA091FE2336092600C15195 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		0B8515F6215CF4657A70A63B /* Pods-RxSwiftLearningDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftLearningDemo.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftLearningDemo/Pods-RxSwiftLearningDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		0D480ABE2338A5440058874C /* ObservableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableViewController.swift; sourceTree = "<group>"; };
 		0DA091F72336092600C15195 /* RxSwiftLearningDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftLearningDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA091FA2336092600C15195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DA091FC2336092600C15195 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D480ABD2338A51F0058874C /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				0D480ABE2338A5440058874C /* ObservableViewController.swift */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
 		0DA091EE2336092600C15195 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		0DA092102336094700C15195 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0D480ABD2338A51F0058874C /* Observable */,
 				0DB7095923371D1100982ABB /* Test */,
 				0DB709562336F9C100982ABB /* Subject */,
 				0DA0921923360F7600C15195 /* Extension */,
@@ -319,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DA091FF2336092600C15195 /* ViewController.swift in Sources */,
+				0D480ABF2338A5440058874C /* ObservableViewController.swift in Sources */,
 				0DA0921823360EA400C15195 /* ControllerInfo.swift in Sources */,
 				0DB7095C23371D2500982ABB /* TestViewController.swift in Sources */,
 				0DA0921C23360F8E00C15195 /* ExtensionViewController.swift in Sources */,
