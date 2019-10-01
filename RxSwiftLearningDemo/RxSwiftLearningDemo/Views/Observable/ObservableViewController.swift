@@ -122,6 +122,32 @@ class ObservableViewController: UIViewController {
         //        }) {
         //            print("subscribe dispose")
         //            }.disposed(by: disposeBag)
+        let numbers = Observable<Int>.create { [weak self]observer in
+            let start = self?.getStartNumber() ?? 0
+            observer.onNext(start)
+            observer.onNext(start+1)
+            observer.onNext(start+2)
+            observer.onCompleted()
+            return Disposables.create()
+        }.share()
+        
+        numbers
+        .subscribe(onNext: { el in
+          print("element [\(el)]")
+        }, onCompleted: {
+          print("-------------")
+            }).disposed(by: disposeBag)
+        print("***************")
+        numbers
+        .subscribe(onNext: { el in
+          print("element [\(el)]")
+        }, onCompleted: {
+          print("-------------")
+        }).disposed(by: disposeBag)
     }
-    
+    var start = 0
+    func getStartNumber() -> Int {
+    start += 1
+        return start
+    }
 }
