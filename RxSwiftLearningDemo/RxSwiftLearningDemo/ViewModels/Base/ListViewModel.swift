@@ -18,5 +18,6 @@ struct ListViewModel {
         ControllerInfo(className: "ObservableViewController", displayTitle: "Observable"),
         ControllerInfo(className: "OAndSViewController", displayTitle: "Observable and Subject"),
         ControllerInfo(className: "FilterViewController", displayTitle: "Filter"),
-        ControllerInfo(className: "TransformingViewController", displayTitle: "Transforming")])
+        ControllerInfo(className: "TransformingViewController", displayTitle: "Transforming"),
+        ControllerInfo(className: "CombiningViewController", displayTitle: "Combining")])
 }
