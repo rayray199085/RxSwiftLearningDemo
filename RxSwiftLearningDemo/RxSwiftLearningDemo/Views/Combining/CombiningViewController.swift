@@ -144,8 +144,8 @@ class CombiningViewController: UIViewController {
 //            })
 //            .disposed(by: bag)
         
-        let button = PublishSubject<Void>()
-        let textField = PublishSubject<String>()
+//        let button = PublishSubject<Void>()
+//        let textField = PublishSubject<String>()
         
 //        button
 //            .withLatestFrom(textField)
@@ -160,22 +160,114 @@ class CombiningViewController: UIViewController {
 //        button.onNext(())
 //        button.onNext(())
         
-        textField
-            .sample(button)
-            .subscribe(onNext: { (element) in
-                print(element)
+//        textField
+//            .sample(button)
+//            .subscribe(onNext: { (element) in
+//                print(element)
+//            })
+//            .disposed(by: bag)
+//
+//        textField.onNext("Pa")
+//        textField.onNext("Par")
+//        textField.onNext("Paris")
+//
+//        button.onNext(())
+//        button.onNext(())
+        
+//        let left = PublishSubject<String>()
+//        let right = PublishSubject<String>()
+//
+//        left
+//            .amb(right)
+//            .subscribe(onNext: { (element) in
+//                print(element)
+//            }).disposed(by: bag)
+//
+//        right.onNext("Melbourne")
+//        left.onNext("Lisbon")
+//        right.onNext("Copenhagen")
+//        left.onNext("London")
+//        left.onNext("Madrid")
+//        right.onNext("Vienna")
+        
+//        let one = PublishSubject<String>()
+//        let two = PublishSubject<String>()
+//        let three = PublishSubject<String>()
+//
+//        let source = PublishSubject<Observable<String>>()
+//
+//        source
+//            .switchLatest()
+//            .subscribe(onNext: { (element) in
+//                print(element)
+//            })
+//            .disposed(by: bag)
+//
+//        source.onNext(one)
+//        one.onNext("Some text from sequence one")
+//        two.onNext("Some text from sequence two")
+//
+//        source.onNext(two)
+//        two.onNext("More text from sequence two")
+//        one.onNext("and also from sequence one")
+//
+//        source.onNext(three)
+//        two.onNext("Why don't you seem me?")
+//        one.onNext("I'm alone, help me")
+//        three.onNext("Hey it's three. I win.")
+//
+//        source.onNext(one)
+//        one.onNext("Nope. It's me, one!")
+        
+//        Observable<Int>
+//            .from([1,3,5,7,9])
+//            .reduce(0, accumulator: { (sum, newValue) -> Int in
+//                return sum + newValue
+//            })
+//            .subscribe(onNext: { (element) in
+//                print(element)
+//            })
+//            .disposed(by: bag)
+        
+//        Observable<Int>
+//            .from([1,3,5,7,9])
+//            .scan(0, accumulator: +)
+//            .subscribe(onNext: { (element) in
+//                print(element)
+//            })
+//            .disposed(by: bag)
+        
+        let source = Observable.of(1, 3, 5, 7, 9)
+
+//        let observable = source.scan(0, accumulator: +)
+//        Observable
+//            .zip(source, observable){
+//                (sourceValue, currentTotalValue) -> String in
+//            return "Source value: \(sourceValue), current total value: \(currentTotalValue)"
+//            }
+//            .subscribe(onNext: { (result) in
+//            print(result)
+//            })
+//            .disposed(by: bag)
+        source
+            .scan(ScanValue(current: 0, total: 0)) {
+            (currentTotal, current) in
+                return ScanValue(current: current, total: currentTotal.total + current)}
+            .subscribe(onNext: { (scanValue) in
+            print("Source value: \(scanValue.current), current total value: \(scanValue.total)")
             })
             .disposed(by: bag)
-        
-        textField.onNext("Pa")
-        textField.onNext("Par")
-        textField.onNext("Paris")
-        
-        button.onNext(())
-        button.onNext(())
+       
+//        _ = observable.subscribe(onNext: { value in
+//          print(value)
+//        })
     }
 //    enum Weather{
 //        case sunny
 //        case cloudy
 //    }
+}
+struct ScanValue{
+    let current: Int
+    let total: Int
 }
