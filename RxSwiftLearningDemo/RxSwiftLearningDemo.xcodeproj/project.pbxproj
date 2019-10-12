@@ -12,6 +12,13 @@
 		0D387FCA234728A800C9AEE4 /* CombiningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D387FC9234728A800C9AEE4 /* CombiningViewController.swift */; };
 		0D480ABF2338A5440058874C /* ObservableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D480ABE2338A5440058874C /* ObservableViewController.swift */; };
 		0D6BCA2F234030C0007C3156 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6BCA2E234030C0007C3156 /* FilterModel.swift */; };
+		0D7B11A9234D502B0089FCF4 /* TimingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B11A8234D502B0089FCF4 /* TimingViewController.swift */; };
+		0D7B11BE234D5C1F0089FCF4 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B11B8234D5C1F0089FCF4 /* Label.swift */; };
+		0D7B11BF234D5C1F0089FCF4 /* SupportCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B11B9234D5C1F0089FCF4 /* SupportCode.swift */; };
+		0D7B11C0234D5C1F0089FCF4 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B11BA234D5C1F0089FCF4 /* StackView.swift */; };
+		0D7B11C1234D5C1F0089FCF4 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B11BB234D5C1F0089FCF4 /* Timer.swift */; };
+		0D7B11C2234D5C1F0089FCF4 /* TimelineViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B11BC234D5C1F0089FCF4 /* TimelineViewBase.swift */; };
+		0D7B11C3234D5C1F0089FCF4 /* HostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B11BD234D5C1F0089FCF4 /* HostView.swift */; };
 		0D9636CF2339CCBF0026B2EB /* OAndSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9636CE2339CCBF0026B2EB /* OAndSViewController.swift */; };
 		0DA091FB2336092600C15195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA091FA2336092600C15195 /* AppDelegate.swift */; };
 		0DA091FD2336092600C15195 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA091FC2336092600C15195 /* SceneDelegate.swift */; };
@@ -37,6 +44,13 @@
 		0D387FC9234728A800C9AEE4 /* CombiningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombiningViewController.swift; sourceTree = "<group>"; };
 		0D480ABE2338A5440058874C /* ObservableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableViewController.swift; sourceTree = "<group>"; };
 		0D6BCA2E234030C0007C3156 /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
+		0D7B11A8234D502B0089FCF4 /* TimingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingViewController.swift; sourceTree = "<group>"; };
+		0D7B11B8234D5C1F0089FCF4 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		0D7B11B9234D5C1F0089FCF4 /* SupportCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportCode.swift; sourceTree = "<group>"; };
+		0D7B11BA234D5C1F0089FCF4 /* StackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		0D7B11BB234D5C1F0089FCF4 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		0D7B11BC234D5C1F0089FCF4 /* TimelineViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewBase.swift; sourceTree = "<group>"; };
+		0D7B11BD234D5C1F0089FCF4 /* HostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostView.swift; sourceTree = "<group>"; };
 		0D9636CE2339CCBF0026B2EB /* OAndSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAndSViewController.swift; sourceTree = "<group>"; };
 		0DA091F72336092600C15195 /* RxSwiftLearningDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftLearningDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA091FA2336092600C15195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +125,28 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0D7B11A7234D50140089FCF4 /* Timing */ = {
+			isa = PBXGroup;
+			children = (
+				0D7B11B7234D5C1F0089FCF4 /* Sources */,
+				0D7B11A8234D502B0089FCF4 /* TimingViewController.swift */,
+			);
+			path = Timing;
+			sourceTree = "<group>";
+		};
+		0D7B11B7234D5C1F0089FCF4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0D7B11B8234D5C1F0089FCF4 /* Label.swift */,
+				0D7B11B9234D5C1F0089FCF4 /* SupportCode.swift */,
+				0D7B11BA234D5C1F0089FCF4 /* StackView.swift */,
+				0D7B11BB234D5C1F0089FCF4 /* Timer.swift */,
+				0D7B11BC234D5C1F0089FCF4 /* TimelineViewBase.swift */,
+				0D7B11BD234D5C1F0089FCF4 /* HostView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		0D9636CD2339CC950026B2EB /* Observable and Subject */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +207,7 @@
 		0DA092102336094700C15195 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0D7B11A7234D50140089FCF4 /* Timing */,
 				0D387FC82347288900C9AEE4 /* Combining */,
 				0D37D6BE2342D506007F3ABE /* Transforming */,
 				0DAE5D05233C9C3C00790687 /* Filter */,
@@ -400,16 +437,23 @@
 				0DA091FF2336092600C15195 /* ViewController.swift in Sources */,
 				0D480ABF2338A5440058874C /* ObservableViewController.swift in Sources */,
 				0DA0921823360EA400C15195 /* ControllerInfo.swift in Sources */,
+				0D7B11C1234D5C1F0089FCF4 /* Timer.swift in Sources */,
 				0D6BCA2F234030C0007C3156 /* FilterModel.swift in Sources */,
 				0DB7095C23371D2500982ABB /* TestViewController.swift in Sources */,
+				0D7B11C2234D5C1F0089FCF4 /* TimelineViewBase.swift in Sources */,
 				0D37D6C32342DB08007F3ABE /* Student.swift in Sources */,
 				0D9636CF2339CCBF0026B2EB /* OAndSViewController.swift in Sources */,
 				0D387FCA234728A800C9AEE4 /* CombiningViewController.swift in Sources */,
+				0D7B11C0234D5C1F0089FCF4 /* StackView.swift in Sources */,
 				0DAE5D07233C9C4C00790687 /* FilterViewController.swift in Sources */,
+				0D7B11C3234D5C1F0089FCF4 /* HostView.swift in Sources */,
 				0DA0921C23360F8E00C15195 /* ExtensionViewController.swift in Sources */,
 				0D37D6C02342D523007F3ABE /* TransformingViewController.swift in Sources */,
 				0DA091FB2336092600C15195 /* AppDelegate.swift in Sources */,
+				0D7B11A9234D502B0089FCF4 /* TimingViewController.swift in Sources */,
 				0DB709582336F9D700982ABB /* SubjectViewController.swift in Sources */,
+				0D7B11BF234D5C1F0089FCF4 /* SupportCode.swift in Sources */,
+				0D7B11BE234D5C1F0089FCF4 /* Label.swift in Sources */,
 				0DA0921523360A8E00C15195 /* ListViewModel.swift in Sources */,
 				0DA091FD2336092600C15195 /* SceneDelegate.swift in Sources */,
 			);
